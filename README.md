@@ -11,9 +11,22 @@ Key Improvements:
 1. Reduced video processing time by 370% through implementing binary search on which frame needs to be processed as per Game Action.
 2. Improved fame action template matching by 24.27 sec/frame through partitioning frames(10 frames/core/flow) and optimized c++ implementation to find normalized correlation coefficient.
 
+Currently we have support for 'Enemy Slept' Action available for editing.
+
+![action_template](template.png)  &nbsp; Only for this action in the gameplay.
+
 ## Getting Started
 
+```
+# command to use
+python3 core.py --file --output --before --after
+e.g: python3 core.py --file todaysteream.mp4 --output youtubechannel_upload.mp4 --before 120 --after 120 
 
+=> file takes your game play video file name
+=> output is the filename you want to produce output
+=> before takes time will cut before(in seconds) from the action started
+=> after takes time will cut after(in seconds) from the action started
+```
 
 ### Prerequisites
 
