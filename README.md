@@ -6,6 +6,11 @@ based on timestamps given by user to cut " how many seconds before action happen
 and how man after action happened". And this code will create a movie based on all
 the actions from a particular game play video input.
 
+Key Improvements:
+
+1. Reduced video processing time by 370% through implementing binary search on which frame needs to be processed as per Game Action.
+2. Improved fame action template matching by 24.27 sec/frame through partitioning frames(10 frames/core/flow) and optimized c++ implementation to find normalized correlation coefficient.
+
 ## Getting Started
 
 
